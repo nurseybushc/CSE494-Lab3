@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.asu.bscs.a1203737023.lab3.MainActivity"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableLayout1">
+        <!-- 2 columns -->
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+
+                android:text="Title"
+                android:id="@+id/tv_title" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:text="" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+
+                android:text="Year"
+                android:id="@+id/tv_year"/>
+
+            <EditText
+                android:id="@+id/et_year"
+                android:text="" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+
+                android:text="Rated"
+                android:id="@+id/tv_rated"/>
+
+            <EditText
+                android:id="@+id/et_rated"
+                android:text="" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+
+                android:text="Released"
+                android:id="@+id/tv_released"/>
+
+            <EditText
+                android:id="@+id/et_released"
+                android:text="" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+
+                android:text="Runtime"
+                android:id="@+id/tv_runtime"
+                />
+
+            <EditText
+                android:id="@+id/et_runtime"
+                android:text="" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+
+                android:text="Genre"
+                android:id="@+id/tv_genre" />
+
+            <EditText
+                android:id="@+id/et_genre"
+                android:text="" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+
+                android:text="Actors"
+                android:id="@+id/tv_actors" />
+
+            <EditText
+                android:id="@+id/et_actors"
+                android:text="" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <TextView
+
+                android:text="Plot"
+                android:id="@+id/tv_plot" />
+
+            <EditText
+                android:id="@+id/et_plot"
+                android:text="" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <Button
+                android:text="Make Movie"
+                android:id="@+id/b_makeMovie"
+                android:onClick="createFile" />
+
+            <Button
+                android:text="Read File"
+                android:id="@+id/b_readMovie"
+                android:onClick="readFile" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <Button
+                android:text="Clear Fields"
+                android:id="@+id/b_clear"
+                android:onClick="clearEditTexts" />
+            <Button
+                android:text="Check if File Exists"
+                android:id="@+id/b_fileExists"
+                android:onClick="checkIfFileExists" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <Button
+                android:text="Load Raw File"
+                android:id="@+id/b_loadFile"
+                android:onClick="loadRawMovieJson" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+</ScrollView>
